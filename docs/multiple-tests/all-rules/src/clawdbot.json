@@ -1,0 +1,19 @@
+{
+  "gateway": {
+    "bind": "0.0.0.0",
+    "auth": {
+      "mode": "off",
+      "token": "weak"
+    }
+  },
+  "channels": [
+    {
+      "name": "slack",
+      "dmPolicy": "open",
+      "groupPolicy": "any"
+    }
+  ],
+  "database": {
+    "password": "plaintext_secret_123"
+  }
+}

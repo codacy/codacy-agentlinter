@@ -1,0 +1,580 @@
+{
+  "name": "agentlinter",
+  "version": "0.3.3",
+  "patterns": [
+    {
+      "patternId": "claude-code/agent-focus",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "clarity/no-vague-instructions",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "clarity/actionable-instructions",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "clarity/has-examples",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "clarity/no-contradictions",
+      "level": "Error",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "clarity/instruction-density",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "clarity/naked-conditional",
+      "level": "Error",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "clarity/compound-instruction",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "clarity/escape-hatch-missing",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "clarity/ambiguous-pronoun",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "clarity/action-without-context",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "clarity/sentence-complexity",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "clarity/priority-signal-missing",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "clarity/undefined-term",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "clarity/english-config-files",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "completeness/has-identity",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "completeness/has-tools",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "completeness/has-boundaries",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "completeness/has-user-context",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "completeness/has-error-handling",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "completeness/has-output-format",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "completeness/has-workflow",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "completeness/has-priorities",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "completeness/verification-criteria-required",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "consistency/referenced-files-exist",
+      "level": "Error",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "consistency/naming-convention",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "consistency/no-duplicate-instructions",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "consistency/identity-alignment",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "consistency/permission-conflict",
+      "level": "Error",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "consistency/tone-voice-alignment",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "consistency/language-mixing",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "consistency/circular-dependency",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "consistency/timezone-locale-drift",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "consistency/priority-conflict",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "consistency/outdated-cross-references",
+      "level": "Error",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "claude-code/hooks-structure",
+      "level": "Warning",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "claude-code/instruction-count",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "memory/has-memory-strategy",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "memory/has-handoff-protocol",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "memory/has-file-based-notes",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "memory/no-mental-notes",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "memory/has-context-window-awareness",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "memory/has-state-tracking",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "memory/has-learning-loop",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "structure/position-risk-warning",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "claude-code/progressive-disclosure",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "claude-code/relevance-trap",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "remote-ready/workspace-path-specified",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "remote-ready/env-vars-documented",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "remote-ready/model-settings-specified",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "runtime/config-exists",
+      "level": "Info",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "runtime/gateway-bind",
+      "level": "Error",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "runtime/auth-mode",
+      "level": "Error",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "runtime/token-strength",
+      "level": "Warning",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "runtime/dm-policy",
+      "level": "Warning",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "runtime/group-policy",
+      "level": "Warning",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "runtime/config-secrets",
+      "level": "Warning",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "security/no-secrets",
+      "level": "Error",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "security/has-injection-defense",
+      "level": "Warning",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "security/has-permission-boundaries",
+      "level": "Warning",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "security/no-pii-exposure",
+      "level": "Warning",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "security/env-var-references",
+      "level": "Info",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "security/prompt-injection-vulnerability",
+      "level": "Warning",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "security/api-key-exposure",
+      "level": "Error",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "skill-safety/skill-name-match-dir",
+      "level": "Error",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "skill-safety/skill-description-when-to-use",
+      "level": "Warning",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "skill-safety/has-metadata",
+      "level": "Warning",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "skill-safety/dangerous-commands",
+      "level": "Error",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "skill-safety/sensitive-paths",
+      "level": "Warning",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "skill-safety/data-exfiltration",
+      "level": "Error",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "skill-safety/excessive-permissions",
+      "level": "Warning",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "skill-safety/injection-vectors",
+      "level": "Error",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "claude-code/skills-vs-commands",
+      "level": "Warning",
+      "category": "Security",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "structure/has-main-file",
+      "level": "Error",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "structure/has-sections",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "structure/heading-hierarchy",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "structure/file-size",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "structure/modular-files",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "structure/no-empty-sections",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "structure/has-file-map",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "structure/has-version-or-update-date",
+      "level": "Info",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    },
+    {
+      "patternId": "clarity/token-efficiency-score",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": [],
+      "enabled": true
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+agentlinter is a static analysis tool for AI agent configuration files. It acts as "ESLint for AI Agents" — scoring, diagnosing, and helping fix agent workspace files such as CLAUDE.md and AGENTS.md. It detects vague instructions, security issues, structural problems, and cross-file inconsistencies. [Learn more](https://github.com/seojoonkim/agentlinter)

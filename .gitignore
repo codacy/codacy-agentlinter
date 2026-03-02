@@ -1,0 +1,12 @@
+.idea
+node_modules/
+.metals
+dist/
+tsconfig.tsbuildinfo
+.DS_Store
+.vscode
+
+.claude
+
+#Ignore vscode AI rules
+.github/instructions/codacy.instructions.md

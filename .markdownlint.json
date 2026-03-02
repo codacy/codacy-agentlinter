@@ -1,0 +1,7 @@
+{
+  "line-length": false,
+  "ul-style": {
+    "style": "dash"
+  },
+  "list-marker-space": "ul_single"
+}

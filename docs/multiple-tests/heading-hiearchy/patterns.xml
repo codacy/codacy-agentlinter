@@ -1,0 +1,3 @@
+<module name="root">
+  <module name="structure/heading-hierarchy" />
+</module>

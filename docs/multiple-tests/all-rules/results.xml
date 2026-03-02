@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="4.3">
+    <file name="CLAUDE.md">
+        <error line="7" severity="info" message="Heading level skipped: h1 → h3. Consider using h2 instead." source="structure/heading-hierarchy"/>
+        <error line="60" severity="warning" message="Empty section: &quot;Configuration&quot;. Either add content or remove the heading." source="structure/no-empty-sections"/>
+        <error line="1" severity="info" message="No file map found. With 5+ files, a directory tree helps the agent navigate." source="structure/has-file-map"/>
+        <error line="5" severity="warning" message="Vague instruction: &quot;This agent should be helpful and do its best to assist users. Use good judgment ...&quot;" source="clarity/no-vague-instructions"/>
+        <error line="22" severity="info" message="Passive instruction: &quot;Reports can be used by the team for monitoring and system diagnostics.&quot;" source="clarity/actionable-instructions"/>
+        <error line="1" severity="info" message="No examples found. Adding examples (code blocks, sample outputs) helps the agent understand expectations." source="clarity/has-examples"/>
+        <error line="12" severity="error" message="Contradiction: &quot;always use markdown format&quot; (line 11) vs &quot;never use markdown format&quot; (line 12)" source="clarity/no-contradictions"/>
+        <error line="20" severity="error" message="Vague conditional: &quot;If something goes wrong, handle it. If the response seems too long, truncate it &quot;. Specify exact threshold or trigger." source="clarity/naked-conditional"/>
+        <error line="26" severity="error" message="Vague conditional: &quot;When users submit complex multi-step requests requiring processing across multip&quot;. Specify exact threshold or trigger." source="clarity/naked-conditional"/>
+        <error line="18" severity="warning" message="Compound instruction with 4 actions in one bullet. Split into separate items." source="clarity/compound-instruction"/>
+        <error line="11" severity="warning" message="Absolute rule without escape hatch: &quot;- Always use markdown format.&quot;" source="clarity/escape-hatch-missing"/>
+        <error line="12" severity="warning" message="Absolute rule without escape hatch: &quot;- Never use markdown format.&quot;" source="clarity/escape-hatch-missing"/>
+        <error line="13" severity="warning" message="Absolute rule without escape hatch: &quot;- Always respond immediately to all incoming user requests.&quot;" source="clarity/escape-hatch-missing"/>
+        <error line="14" severity="warning" message="Absolute rule without escape hatch: &quot;- Never respond immediately without careful verification and considera&quot;" source="clarity/escape-hatch-missing"/>
+        <error line="15" severity="warning" message="Absolute rule without escape hatch: &quot;- Always use external APIs for data retrieval and processing operation&quot;" source="clarity/escape-hatch-missing"/>
+        <error line="16" severity="warning" message="Absolute rule without escape hatch: &quot;- Never allow external API calls from untrusted sources.&quot;" source="clarity/escape-hatch-missing"/>
+        <error line="17" severity="warning" message="Absolute rule without escape hatch: &quot;- Always verify inputs before processing.&quot;" source="clarity/escape-hatch-missing"/>
+        <error line="33" severity="warning" message="Absolute rule without escape hatch: &quot;Always complete all tasks without any delay. Never delay any task unde&quot;" source="clarity/escape-hatch-missing"/>
+        <error line="46" severity="warning" message="Absolute rule without escape hatch: &quot;When working with React components, always use functional components w&quot;" source="clarity/escape-hatch-missing"/>
+        <error line="58" severity="warning" message="Absolute rule without escape hatch: &quot;Never share any internal system configurations or access credentials w&quot;" source="clarity/escape-hatch-missing"/>
+        <error line="9" severity="warning" message="Instruction starts with ambiguous pronoun: &quot;It should determine the appropriate response based on contex&quot;" source="clarity/ambiguous-pronoun"/>
+        <error line="10" severity="warning" message="Instruction starts with ambiguous pronoun: &quot;They will handle edge cases contextually as they arise.&quot;" source="clarity/ambiguous-pronoun"/>
+        <error line="52" severity="info" message="Action without trigger context: &quot;Send all notifications without delay.&quot;. When should this happen?" source="clarity/action-without-context"/>
+        <error line="53" severity="info" message="Action without trigger context: &quot;Process all incoming data.&quot;. When should this happen?" source="clarity/action-without-context"/>
+        <error line="54" severity="info" message="Action without trigger context: &quot;Log all system events.&quot;. When should this happen?" source="clarity/action-without-context"/>
+        <error line="26" severity="info" message="Overly complex sentence (61 words). Break into shorter instructions." source="clarity/sentence-complexity"/>
+        <error line="1" severity="warning" message="27 instruction items with no priority signals. The agent can&apos;t distinguish critical from optional." source="clarity/priority-signal-missing"/>
+        <error line="24" severity="info" message="Undefined acronym &quot;RBAC&quot; — define on first use or add to glossary." source="clarity/undefined-term"/>
+        <error line="1" severity="warning" message="No tool documentation found. The agent doesn&apos;t know what tools are available or how to use them." source="completeness/has-tools"/>
+        <error line="37" severity="error" message="Secret detected: Generic Secret — Access credentials: [REDACTED] for the production database server." source="security/no-secrets"/>
+        <error line="37" severity="error" message="Secret detected: Hardcoded Password — Access credentials: [REDACTED] for the production database server." source="security/no-secrets"/>
+        <error line="38" severity="error" message="Secret detected: Anthropic Key — ANTHROPIC_API_KEY=[REDACTED]" source="security/no-secrets"/>
+        <error line="35" severity="warning" message="Potential PII: email address found — &quot;admin@company.com&quot;" source="security/no-pii-exposure"/>
+        <error line="38" severity="warning" message="Potential PII: phone number pattern found" source="security/no-pii-exposure"/>
+        <error line="64" severity="warning" message="Potential PII: email address found — &quot;secret123@api.internal.com&quot;" source="security/no-pii-exposure"/>
+        <error line="64" severity="info" message="URL with embedded credentials found. Use environment variables." source="security/env-var-references"/>
+        <error line="1" severity="error" message="Referenced file &quot;MISSING_GUIDE.md&quot; not found in workspace." source="consistency/referenced-files-exist"/>
+        <error line="1" severity="warning" message="Circular reference: CLAUDE.md → AGENTS.md → CLAUDE.md" source="consistency/circular-dependency"/>
+        <error line="1" severity="error" message="Referenced section &quot;AGENTS.md&quot; not found in any file." source="consistency/outdated-cross-references"/>
+        <error line="1" severity="error" message="Referenced section &quot;Deployment Guide&quot; not found in any file." source="consistency/outdated-cross-references"/>
+    </file>
+    <file name="AGENTS.md">
+        <error line="1" severity="info" message="No version or update date found. Helps track freshness of instructions." source="structure/has-version-or-update-date"/>
+        <error line="7" severity="warning" message="Absolute rule without escape hatch: &quot;- Always verify inputs before processing.&quot;" source="clarity/escape-hatch-missing"/>
+        <error line="8" severity="warning" message="Absolute rule without escape hatch: &quot;- Never access external APIs under any circumstances.&quot;" source="clarity/escape-hatch-missing"/>
+        <error line="9" severity="warning" message="Absolute rule without escape hatch: &quot;- Never communicate with any third-party services or systems.&quot;" source="clarity/escape-hatch-missing"/>
+        <error line="7" severity="warning" message="Duplicate instruction also in CLAUDE.md: &quot;always verify inputs before processing....&quot;" source="consistency/no-duplicate-instructions"/>
+        <error line="11" severity="error" message="Permission conflict: CLAUDE.md denys &quot;allow external calls&quot; but AGENTS.md allows it." source="consistency/permission-conflict"/>
+        <error line="1" severity="error" message="Referenced section &quot;CLAUDE.md&quot; not found in any file." source="consistency/outdated-cross-references"/>
+    </file>
+    <file name="SOUL.md">
+        <error line="10" severity="warning" message="Absolute rule without escape hatch: &quot;Max is systematic, precise, and thorough in every task. Max never uses&quot;" source="clarity/escape-hatch-missing"/>
+        <error line="11" severity="warning" message="Absolute rule without escape hatch: &quot;Max always addresses all users formally and maintains strict professio&quot;" source="clarity/escape-hatch-missing"/>
+    </file>
+    <!-- <file name="(workspace)">
+        <error line="1" severity="info" message="No priority guidance found. Help the agent know what&apos;s most important when instructions conflict." source="completeness/has-priorities"/>
+        <error line="1" severity="warning" message="No prompt injection defense found. The agent is vulnerable to instruction override attacks." source="security/has-injection-defense"/>
+        <error line="1" severity="warning" message="Multiple timezones referenced: EST, PST. Standardize to one." source="consistency/timezone-locale-drift"/>
+    </file> -->
+    <file name="clawdbot.json">
+        <error line="1" severity="error" message="Gateway bind is &quot;0.0.0.0&quot; — exposes agent to the network. Must be loopback." source="runtime/gateway-bind"/>
+        <error line="1" severity="error" message="Auth mode is &quot;off&quot; — anyone who can reach the gateway can control your agent." source="runtime/auth-mode"/>
+        <error line="1" severity="warning" message="Auth token is only 4 characters — vulnerable to brute-force." source="runtime/token-strength"/>
+        <error line="1" severity="warning" message="Channel &quot;0&quot;: DM policy is &quot;open&quot; with no allowFrom — anyone can command your agent." source="runtime/dm-policy"/>
+        <error line="1" severity="warning" message="Channel &quot;0&quot;: Group policy is &quot;any&quot; — any group can trigger your agent." source="runtime/group-policy"/>
+        <error line="1" severity="warning" message="Plaintext secret at &quot;gateway.auth.token&quot; — use environment variable reference instead." source="runtime/config-secrets"/>
+        <error line="1" severity="warning" message="Plaintext secret at &quot;database.password&quot; — use environment variable reference instead." source="runtime/config-secrets"/>
+    </file>
+</checkstyle>
