@@ -29,13 +29,13 @@ describe("convertResults", () => {
       new Issue(
         "CLAUDE.md",
         "Heading level skipped: h1 → h3. Consider using h2 instead.",
-        "structure/heading-hierarchy",
+        "structure_heading-hierarchy",
         3
       ),
       new Issue(
         "CLAUDE.md",
         "Vague instruction detected: 'be helpful'",
-        "clarity/no-vague-instructions",
+        "clarity_no-vague-instructions",
         5
       )
     ]
@@ -65,7 +65,7 @@ describe("convertResults", () => {
 
     const results = convertResults(diagnostics, ["CLAUDE.md"])
     const expected: ToolResult[] = [
-      new Issue("CLAUDE.md", "Test message", "structure/heading-hierarchy", 3)
+      new Issue("CLAUDE.md", "Test message", "structure_heading-hierarchy", 3)
     ]
 
     deepEqual(results, expected)
@@ -92,10 +92,10 @@ describe("convertResults", () => {
     ]
 
     const results = convertResults(diagnostics, undefined, [
-      "structure/heading-hierarchy"
+      "structure_heading-hierarchy"
     ])
     const expected: ToolResult[] = [
-      new Issue("CLAUDE.md", "Heading issue", "structure/heading-hierarchy", 3)
+      new Issue("CLAUDE.md", "Heading issue", "structure_heading-hierarchy", 3)
     ]
 
     deepEqual(results, expected)
@@ -118,7 +118,7 @@ describe("convertResults", () => {
       new Issue(
         "(workspace)",
         "No CLAUDE.md or AGENTS.md found. This is the main entry point for your agent.",
-        "structure/has-main-file",
+        "structure_has-main-file",
         1
       )
     ]
@@ -142,7 +142,7 @@ describe("convertResults", () => {
       new Issue(
         "(workspace)",
         "No CLAUDE.md or AGENTS.md found.",
-        "structure/has-main-file",
+        "structure_has-main-file",
         1
       )
     ]
@@ -167,7 +167,7 @@ describe("convertResults", () => {
       new Issue(
         "(workspace)",
         "No CLAUDE.md or AGENTS.md found.",
-        "structure/has-main-file",
+        "structure_has-main-file",
         1,
         "Create a CLAUDE.md file with your agent's core instructions."
       )

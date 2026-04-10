@@ -22,7 +22,7 @@ describe("agentlinter integration", () => {
       new Issue(
         "(workspace)",
         "No CLAUDE.md or AGENTS.md found. This is the main entry point for your agent.",
-        "structure/has-main-file",
+        "structure_has-main-file",
         1,
         "Create a CLAUDE.md file with your agent's core instructions."
       )
@@ -51,13 +51,13 @@ describe("agentlinter integration", () => {
     ]
 
     const results = convertResults(diagnostics, undefined, [
-      "structure/heading-hierarchy"
+      "structure_heading-hierarchy"
     ])
     const expected: ToolResult[] = [
       new Issue(
         "CLAUDE.md",
         "Heading level skipped: h1 → h3. Consider using h2 instead.",
-        "structure/heading-hierarchy",
+        "structure_heading-hierarchy",
         3
       )
     ]

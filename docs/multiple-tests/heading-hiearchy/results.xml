@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <checkstyle version="4.3">
     <file name="CLAUDE.md">
-        <error line="3" severity="info" message="Heading level skipped: h1 → h3. Consider using h2 instead." source="structure/heading-hierarchy"/>
+        <error line="3" severity="info" message="Heading level skipped: h1 → h3. Consider using h2 instead." source="structure_heading-hierarchy"/>
     </file>
 </checkstyle>

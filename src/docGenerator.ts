@@ -135,7 +135,7 @@ export class DocGenerator {
   async generateSpecification (rules: RuleData[]): Promise<void> {
     const patternSpecs: PatternSpec[] = rules.map((rule) =>
       new PatternSpec(
-        rule.id,
+        rule.id.replace(/\//g, "_"),
         severityToLevel(rule.severity),
         categoryToPatternCategory(rule.agentlinterCategory),
         undefined,
@@ -153,8 +153,9 @@ export class DocGenerator {
 
   async generatePatternsDescription (rules: RuleData[]): Promise<void> {
     const descriptionEntries = rules.map((rule) => {
-      const title = `\`${rule.id}\` - ${rule.description}`
-      return new DescriptionEntry(rule.id, title, rule.description, undefined, [])
+      const internalId = rule.id.replace(/\//g, "_")
+      const title = `\`${internalId}\` - ${rule.description}`
+      return new DescriptionEntry(internalId, title, rule.description, undefined, [])
     })
 
     await writeFile(
@@ -179,7 +180,7 @@ export class DocGenerator {
   async generateAllRulesTestPatterns (rules: RuleData[]): Promise<void> {
     const testDir = "./docs/multiple-tests/all-rules/"
     await this.createFolderIfNotExists(testDir)
-    const modules = rules.map((r) => `    <module name="${r.id}" />`).join("\n")
+    const modules = rules.map((r) => `    <module name="${r.id.replace(/\//g, "_")}" />`).join("\n")
     const content = `<module name="root">\n${modules}\n</module>\n`
     await writeFile(testDir + "patterns.xml", content)
   }

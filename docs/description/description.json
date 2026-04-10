@@ -1,494 +1,614 @@
 [
   {
     "parameters": [],
-    "patternId": "claude-code/agent-focus",
-    "title": "`claude-code/agent-focus` - Detect overly broad subagent definitions",
+    "patternId": "claude-code_agent-focus",
+    "title": "`claude-code_agent-focus` - Detect overly broad subagent definitions",
     "description": "Detect overly broad subagent definitions"
   },
   {
     "parameters": [],
-    "patternId": "clarity/no-vague-instructions",
-    "title": "`clarity/no-vague-instructions` - Instructions should be specific and actionable, not vague",
+    "patternId": "blueprint_coverage",
+    "title": "`blueprint_coverage` - Agent config should cover 6 cognitive blueprint elements",
+    "description": "Agent config should cover 6 cognitive blueprint elements"
+  },
+  {
+    "parameters": [],
+    "patternId": "blueprint_identity-defined",
+    "title": "`blueprint_identity-defined` - Agent should have a clear identity/role definition",
+    "description": "Agent should have a clear identity/role definition"
+  },
+  {
+    "parameters": [],
+    "patternId": "blueprint_constraints-defined",
+    "title": "`blueprint_constraints-defined` - Agent should have explicit constraints (what NOT to do)",
+    "description": "Agent should have explicit constraints (what NOT to do)"
+  },
+  {
+    "parameters": [],
+    "patternId": "clarity_no-vague-instructions",
+    "title": "`clarity_no-vague-instructions` - Instructions should be specific and actionable, not vague",
     "description": "Instructions should be specific and actionable, not vague"
   },
   {
     "parameters": [],
-    "patternId": "clarity/actionable-instructions",
-    "title": "`clarity/actionable-instructions` - Prefer active voice and direct instructions",
+    "patternId": "clarity_actionable-instructions",
+    "title": "`clarity_actionable-instructions` - Prefer active voice and direct instructions",
     "description": "Prefer active voice and direct instructions"
   },
   {
     "parameters": [],
-    "patternId": "clarity/has-examples",
-    "title": "`clarity/has-examples` - Including examples helps the agent understand expected behavior",
+    "patternId": "clarity_has-examples",
+    "title": "`clarity_has-examples` - Including examples helps the agent understand expected behavior",
     "description": "Including examples helps the agent understand expected behavior"
   },
   {
     "parameters": [],
-    "patternId": "clarity/no-contradictions",
-    "title": "`clarity/no-contradictions` - Instructions within a file should not contradict each other",
+    "patternId": "clarity_no-contradictions",
+    "title": "`clarity_no-contradictions` - Instructions within a file should not contradict each other",
     "description": "Instructions within a file should not contradict each other"
   },
   {
     "parameters": [],
-    "patternId": "clarity/instruction-density",
-    "title": "`clarity/instruction-density` - Files with too many instructions may cause confusion",
+    "patternId": "clarity_instruction-density",
+    "title": "`clarity_instruction-density` - Files with too many instructions may cause confusion",
     "description": "Files with too many instructions may cause confusion"
   },
   {
     "parameters": [],
-    "patternId": "clarity/naked-conditional",
-    "title": "`clarity/naked-conditional` - Conditionals should have specific, measurable triggers",
+    "patternId": "clarity_naked-conditional",
+    "title": "`clarity_naked-conditional` - Conditionals should have specific, measurable triggers",
     "description": "Conditionals should have specific, measurable triggers"
   },
   {
     "parameters": [],
-    "patternId": "clarity/compound-instruction",
-    "title": "`clarity/compound-instruction` - Each bullet point should contain one action, not multiple",
+    "patternId": "clarity_compound-instruction",
+    "title": "`clarity_compound-instruction` - Each bullet point should contain one action, not multiple",
     "description": "Each bullet point should contain one action, not multiple"
   },
   {
     "parameters": [],
-    "patternId": "clarity/escape-hatch-missing",
-    "title": "`clarity/escape-hatch-missing` - Absolute rules should have an exception/escalation path",
+    "patternId": "clarity_escape-hatch-missing",
+    "title": "`clarity_escape-hatch-missing` - Absolute rules should have an exception/escalation path",
     "description": "Absolute rules should have an exception/escalation path"
   },
   {
     "parameters": [],
-    "patternId": "clarity/ambiguous-pronoun",
-    "title": "`clarity/ambiguous-pronoun` - Pronouns in instructions should have clear referents",
+    "patternId": "clarity_ambiguous-pronoun",
+    "title": "`clarity_ambiguous-pronoun` - Pronouns in instructions should have clear referents",
     "description": "Pronouns in instructions should have clear referents"
   },
   {
     "parameters": [],
-    "patternId": "clarity/action-without-context",
-    "title": "`clarity/action-without-context` - Instructions should specify when/why, not just what",
+    "patternId": "clarity_action-without-context",
+    "title": "`clarity_action-without-context` - Instructions should specify when/why, not just what",
     "description": "Instructions should specify when/why, not just what"
   },
   {
     "parameters": [],
-    "patternId": "clarity/sentence-complexity",
-    "title": "`clarity/sentence-complexity` - Instructions should be short and simple, not nested prose",
+    "patternId": "clarity_sentence-complexity",
+    "title": "`clarity_sentence-complexity` - Instructions should be short and simple, not nested prose",
     "description": "Instructions should be short and simple, not nested prose"
   },
   {
     "parameters": [],
-    "patternId": "clarity/priority-signal-missing",
-    "title": "`clarity/priority-signal-missing` - Files with many rules need explicit priority signals",
+    "patternId": "clarity_priority-signal-missing",
+    "title": "`clarity_priority-signal-missing` - Files with many rules need explicit priority signals",
     "description": "Files with many rules need explicit priority signals"
   },
   {
     "parameters": [],
-    "patternId": "clarity/undefined-term",
-    "title": "`clarity/undefined-term` - Acronyms and jargon should be defined on first use",
+    "patternId": "clarity_undefined-term",
+    "title": "`clarity_undefined-term` - Acronyms and jargon should be defined on first use",
     "description": "Acronyms and jargon should be defined on first use"
   },
   {
     "parameters": [],
-    "patternId": "clarity/english-config-files",
-    "title": "`clarity/english-config-files` - Core config files should be written in English for better token efficiency and interpretation accuracy",
+    "patternId": "clarity_english-config-files",
+    "title": "`clarity_english-config-files` - Core config files should be written in English for better token efficiency and interpretation accuracy",
     "description": "Core config files should be written in English for better token efficiency and interpretation accuracy"
   },
   {
     "parameters": [],
-    "patternId": "completeness/has-identity",
-    "title": "`completeness/has-identity` - Agent should have a defined identity or persona",
+    "patternId": "completeness_has-identity",
+    "title": "`completeness_has-identity` - Agent should have a defined identity or persona",
     "description": "Agent should have a defined identity or persona"
   },
   {
     "parameters": [],
-    "patternId": "completeness/has-tools",
-    "title": "`completeness/has-tools` - Agent should have tool documentation",
+    "patternId": "completeness_has-tools",
+    "title": "`completeness_has-tools` - Agent should have tool documentation",
     "description": "Agent should have tool documentation"
   },
   {
     "parameters": [],
-    "patternId": "completeness/has-boundaries",
-    "title": "`completeness/has-boundaries` - Agent should have defined boundaries and constraints",
+    "patternId": "completeness_has-boundaries",
+    "title": "`completeness_has-boundaries` - Agent should have defined boundaries and constraints",
     "description": "Agent should have defined boundaries and constraints"
   },
   {
     "parameters": [],
-    "patternId": "completeness/has-user-context",
-    "title": "`completeness/has-user-context` - Providing user context helps personalization",
+    "patternId": "completeness_has-user-context",
+    "title": "`completeness_has-user-context` - Providing user context helps personalization",
     "description": "Providing user context helps personalization"
   },
   {
     "parameters": [],
-    "patternId": "completeness/has-error-handling",
-    "title": "`completeness/has-error-handling` - Agent should know how to handle errors and edge cases",
+    "patternId": "completeness_has-error-handling",
+    "title": "`completeness_has-error-handling` - Agent should know how to handle errors and edge cases",
     "description": "Agent should know how to handle errors and edge cases"
   },
   {
     "parameters": [],
-    "patternId": "completeness/has-output-format",
-    "title": "`completeness/has-output-format` - Defining expected output format improves consistency",
+    "patternId": "completeness_has-output-format",
+    "title": "`completeness_has-output-format` - Defining expected output format improves consistency",
     "description": "Defining expected output format improves consistency"
   },
   {
     "parameters": [],
-    "patternId": "completeness/has-workflow",
-    "title": "`completeness/has-workflow` - Defining workflows helps the agent handle multi-step tasks",
+    "patternId": "completeness_has-workflow",
+    "title": "`completeness_has-workflow` - Defining workflows helps the agent handle multi-step tasks",
     "description": "Defining workflows helps the agent handle multi-step tasks"
   },
   {
     "parameters": [],
-    "patternId": "completeness/has-priorities",
-    "title": "`completeness/has-priorities` - Prioritization helps agents decide what matters most",
+    "patternId": "completeness_has-priorities",
+    "title": "`completeness_has-priorities` - Prioritization helps agents decide what matters most",
     "description": "Prioritization helps agents decide what matters most"
   },
   {
     "parameters": [],
-    "patternId": "completeness/verification-criteria-required",
-    "title": "`completeness/verification-criteria-required` - Agent config should define how to verify task completion",
+    "patternId": "completeness_verification-criteria-required",
+    "title": "`completeness_verification-criteria-required` - Agent config should define how to verify task completion",
     "description": "Agent config should define how to verify task completion"
   },
   {
     "parameters": [],
-    "patternId": "consistency/referenced-files-exist",
-    "title": "`consistency/referenced-files-exist` - Files referenced in agent configs should exist",
+    "patternId": "completeness_session-learning-hooks",
+    "title": "`completeness_session-learning-hooks` - Agent should have self-improvement or session learning hooks",
+    "description": "Agent should have self-improvement or session learning hooks"
+  },
+  {
+    "parameters": [],
+    "patternId": "consistency_referenced-files-exist",
+    "title": "`consistency_referenced-files-exist` - Files referenced in agent configs should exist",
     "description": "Files referenced in agent configs should exist"
   },
   {
     "parameters": [],
-    "patternId": "consistency/naming-convention",
-    "title": "`consistency/naming-convention` - File naming should follow a consistent convention",
+    "patternId": "consistency_naming-convention",
+    "title": "`consistency_naming-convention` - File naming should follow a consistent convention",
     "description": "File naming should follow a consistent convention"
   },
   {
     "parameters": [],
-    "patternId": "consistency/no-duplicate-instructions",
-    "title": "`consistency/no-duplicate-instructions` - Same instruction should not appear in multiple files",
+    "patternId": "consistency_no-duplicate-instructions",
+    "title": "`consistency_no-duplicate-instructions` - Same instruction should not appear in multiple files",
     "description": "Same instruction should not appear in multiple files"
   },
   {
     "parameters": [],
-    "patternId": "consistency/identity-alignment",
-    "title": "`consistency/identity-alignment` - Agent identity should be consistent across files",
+    "patternId": "consistency_identity-alignment",
+    "title": "`consistency_identity-alignment` - Agent identity should be consistent across files",
     "description": "Agent identity should be consistent across files"
   },
   {
     "parameters": [],
-    "patternId": "consistency/permission-conflict",
-    "title": "`consistency/permission-conflict` - Permission levels should not conflict across files",
+    "patternId": "consistency_permission-conflict",
+    "title": "`consistency_permission-conflict` - Permission levels should not conflict across files",
     "description": "Permission levels should not conflict across files"
   },
   {
     "parameters": [],
-    "patternId": "consistency/tone-voice-alignment",
-    "title": "`consistency/tone-voice-alignment` - Instruction tone should match the defined persona in SOUL.md",
+    "patternId": "consistency_tone-voice-alignment",
+    "title": "`consistency_tone-voice-alignment` - Instruction tone should match the defined persona in SOUL.md",
     "description": "Instruction tone should match the defined persona in SOUL.md"
   },
   {
     "parameters": [],
-    "patternId": "consistency/language-mixing",
-    "title": "`consistency/language-mixing` - Avoid mixing languages within a single sentence or section",
+    "patternId": "consistency_language-mixing",
+    "title": "`consistency_language-mixing` - Avoid mixing languages within a single sentence or section",
     "description": "Avoid mixing languages within a single sentence or section"
   },
   {
     "parameters": [],
-    "patternId": "consistency/circular-dependency",
-    "title": "`consistency/circular-dependency` - Files should not have circular references",
+    "patternId": "consistency_circular-dependency",
+    "title": "`consistency_circular-dependency` - Files should not have circular references",
     "description": "Files should not have circular references"
   },
   {
     "parameters": [],
-    "patternId": "consistency/timezone-locale-drift",
-    "title": "`consistency/timezone-locale-drift` - Timezone references should be consistent across files",
+    "patternId": "consistency_timezone-locale-drift",
+    "title": "`consistency_timezone-locale-drift` - Timezone references should be consistent across files",
     "description": "Timezone references should be consistent across files"
   },
   {
     "parameters": [],
-    "patternId": "consistency/priority-conflict",
-    "title": "`consistency/priority-conflict` - Same topic should not have conflicting priorities across files",
+    "patternId": "consistency_priority-conflict",
+    "title": "`consistency_priority-conflict` - Same topic should not have conflicting priorities across files",
     "description": "Same topic should not have conflicting priorities across files"
   },
   {
     "parameters": [],
-    "patternId": "consistency/outdated-cross-references",
-    "title": "`consistency/outdated-cross-references` - Section references should point to sections that actually exist",
+    "patternId": "consistency_outdated-cross-references",
+    "title": "`consistency_outdated-cross-references` - Section references should point to sections that actually exist",
     "description": "Section references should point to sections that actually exist"
   },
   {
     "parameters": [],
-    "patternId": "claude-code/hooks-structure",
-    "title": "`claude-code/hooks-structure` - Validate .claude/hooks configuration structure",
+    "patternId": "completeness_freshness-file-paths",
+    "title": "`completeness_freshness-file-paths` - Checks that file paths mentioned in agent docs actually exist on disk",
+    "description": "Checks that file paths mentioned in agent docs actually exist on disk"
+  },
+  {
+    "parameters": [],
+    "patternId": "completeness_command-coverage",
+    "title": "`completeness_command-coverage` - Checks that npm scripts from package.json are documented in agent files",
+    "description": "Checks that npm scripts from package.json are documented in agent files"
+  },
+  {
+    "parameters": [],
+    "patternId": "consistency_stale-file-reference",
+    "title": "`consistency_stale-file-reference` - Checks that file paths referenced in markdown actually exist on disk",
+    "description": "Checks that file paths referenced in markdown actually exist on disk"
+  },
+  {
+    "parameters": [],
+    "patternId": "consistency_stale-date",
+    "title": "`consistency_stale-date` - Detects dates older than 90 days (warning) or 180 days (error) in agent files",
+    "description": "Detects dates older than 90 days (warning) or 180 days (error) in agent files"
+  },
+  {
+    "parameters": [],
+    "patternId": "consistency_stale-package-reference",
+    "title": "`consistency_stale-package-reference` - Cross-checks package names referenced in markdown against package.json",
+    "description": "Cross-checks package names referenced in markdown against package.json"
+  },
+  {
+    "parameters": [],
+    "patternId": "claude-code_hooks-structure",
+    "title": "`claude-code_hooks-structure` - Validate .claude/hooks configuration structure",
     "description": "Validate .claude/hooks configuration structure"
   },
   {
     "parameters": [],
-    "patternId": "claude-code/instruction-count",
-    "title": "`claude-code/instruction-count` - Too many instructions may exceed Claude Code",
+    "patternId": "structure_dead-import",
+    "title": "`structure_dead-import` - Validates that @file.md import references point to existing files",
+    "description": "Validates that @file.md import references point to existing files"
+  },
+  {
+    "parameters": [],
+    "patternId": "structure_circular-import",
+    "title": "`structure_circular-import` - Detects circular references in @file.md import chains using DFS",
+    "description": "Detects circular references in @file.md import chains using DFS"
+  },
+  {
+    "parameters": [],
+    "patternId": "claude-code_instruction-count",
+    "title": "`claude-code_instruction-count` - Too many instructions may exceed Claude Code",
     "description": "Too many instructions may exceed Claude Code"
   },
   {
     "parameters": [],
-    "patternId": "memory/has-memory-strategy",
-    "title": "`memory/has-memory-strategy` - Agent should have an explicit memory/continuity strategy",
+    "patternId": "memory_has-memory-strategy",
+    "title": "`memory_has-memory-strategy` - Agent should have an explicit memory/continuity strategy",
     "description": "Agent should have an explicit memory/continuity strategy"
   },
   {
     "parameters": [],
-    "patternId": "memory/has-handoff-protocol",
-    "title": "`memory/has-handoff-protocol` - Agent should know how to hand off context between sessions",
+    "patternId": "memory_has-handoff-protocol",
+    "title": "`memory_has-handoff-protocol` - Agent should know how to hand off context between sessions",
     "description": "Agent should know how to hand off context between sessions"
   },
   {
     "parameters": [],
-    "patternId": "memory/has-file-based-notes",
-    "title": "`memory/has-file-based-notes` - File-based memory (daily notes, logs) provides persistence",
+    "patternId": "memory_has-file-based-notes",
+    "title": "`memory_has-file-based-notes` - File-based memory (daily notes, logs) provides persistence",
     "description": "File-based memory (daily notes, logs) provides persistence"
   },
   {
     "parameters": [],
-    "patternId": "memory/no-mental-notes",
-    "title": "`memory/no-mental-notes` - Agent should write things down, not rely on ",
+    "patternId": "memory_no-mental-notes",
+    "title": "`memory_no-mental-notes` - Agent should write things down, not rely on ",
     "description": "Agent should write things down, not rely on "
   },
   {
     "parameters": [],
-    "patternId": "memory/has-context-window-awareness",
-    "title": "`memory/has-context-window-awareness` - Agent should be aware of context window limitations",
+    "patternId": "memory_has-context-window-awareness",
+    "title": "`memory_has-context-window-awareness` - Agent should be aware of context window limitations",
     "description": "Agent should be aware of context window limitations"
   },
   {
     "parameters": [],
-    "patternId": "memory/has-state-tracking",
-    "title": "`memory/has-state-tracking` - Agent should track current task state for continuity",
+    "patternId": "memory_has-state-tracking",
+    "title": "`memory_has-state-tracking` - Agent should track current task state for continuity",
     "description": "Agent should track current task state for continuity"
   },
   {
     "parameters": [],
-    "patternId": "memory/has-learning-loop",
-    "title": "`memory/has-learning-loop` - Agent should learn from past interactions",
+    "patternId": "memory_has-learning-loop",
+    "title": "`memory_has-learning-loop` - Agent should learn from past interactions",
     "description": "Agent should learn from past interactions"
   },
   {
     "parameters": [],
-    "patternId": "structure/position-risk-warning",
-    "title": "`structure/position-risk-warning` - Critical rules buried in the middle of a file (20-80%) are easy to miss. Place them near the top.",
+    "patternId": "structure_position-risk-warning",
+    "title": "`structure_position-risk-warning` - Critical rules buried in the middle of a file (20-80%) are easy to miss. Place them near the top.",
     "description": "Critical rules buried in the middle of a file (20-80%) are easy to miss. Place them near the top."
   },
   {
     "parameters": [],
-    "patternId": "claude-code/progressive-disclosure",
-    "title": "`claude-code/progressive-disclosure` - Long CLAUDE.md should be modularized into .claude/rules/",
+    "patternId": "claude-code_progressive-disclosure",
+    "title": "`claude-code_progressive-disclosure` - Long CLAUDE.md should be modularized into .claude/rules/",
     "description": "Long CLAUDE.md should be modularized into .claude/rules/"
   },
   {
     "parameters": [],
-    "patternId": "claude-code/relevance-trap",
-    "title": "`claude-code/relevance-trap` - Context-specific instructions in CLAUDE.md may be ignored due to Claude Code",
+    "patternId": "claude-code_relevance-trap",
+    "title": "`claude-code_relevance-trap` - Context-specific instructions in CLAUDE.md may be ignored due to Claude Code",
     "description": "Context-specific instructions in CLAUDE.md may be ignored due to Claude Code"
   },
   {
     "parameters": [],
-    "patternId": "remote-ready/workspace-path-specified",
-    "title": "`remote-ready/workspace-path-specified` - Workspace path should be explicitly documented for remote execution",
+    "patternId": "remote-ready_workspace-path-specified",
+    "title": "`remote-ready_workspace-path-specified` - Workspace path should be explicitly documented for remote execution",
     "description": "Workspace path should be explicitly documented for remote execution"
   },
   {
     "parameters": [],
-    "patternId": "remote-ready/env-vars-documented",
-    "title": "`remote-ready/env-vars-documented` - Required environment variables should be documented",
+    "patternId": "remote-ready_env-vars-documented",
+    "title": "`remote-ready_env-vars-documented` - Required environment variables should be documented",
     "description": "Required environment variables should be documented"
   },
   {
     "parameters": [],
-    "patternId": "remote-ready/model-settings-specified",
-    "title": "`remote-ready/model-settings-specified` - Model settings should be explicitly configured for reproducible remote execution",
+    "patternId": "remote-ready_model-settings-specified",
+    "title": "`remote-ready_model-settings-specified` - Model settings should be explicitly configured for reproducible remote execution",
     "description": "Model settings should be explicitly configured for reproducible remote execution"
   },
   {
     "parameters": [],
-    "patternId": "runtime/config-exists",
-    "title": "`runtime/config-exists` - Agent runtime config file should exist for full analysis",
+    "patternId": "runtime_config-exists",
+    "title": "`runtime_config-exists` - Agent runtime config file should exist for full analysis",
     "description": "Agent runtime config file should exist for full analysis"
   },
   {
     "parameters": [],
-    "patternId": "runtime/gateway-bind",
-    "title": "`runtime/gateway-bind` - Gateway must bind to loopback (localhost) only",
+    "patternId": "runtime_gateway-bind",
+    "title": "`runtime_gateway-bind` - Gateway must bind to loopback (localhost) only",
     "description": "Gateway must bind to loopback (localhost) only"
   },
   {
     "parameters": [],
-    "patternId": "runtime/auth-mode",
-    "title": "`runtime/auth-mode` - Gateway authentication must be enabled",
+    "patternId": "runtime_auth-mode",
+    "title": "`runtime_auth-mode` - Gateway authentication must be enabled",
     "description": "Gateway authentication must be enabled"
   },
   {
     "parameters": [],
-    "patternId": "runtime/token-strength",
-    "title": "`runtime/token-strength` - Gateway auth token should be at least 32 characters",
+    "patternId": "runtime_token-strength",
+    "title": "`runtime_token-strength` - Gateway auth token should be at least 32 characters",
     "description": "Gateway auth token should be at least 32 characters"
   },
   {
     "parameters": [],
-    "patternId": "runtime/dm-policy",
-    "title": "`runtime/dm-policy` - Open DM policy should have allowFrom restrictions",
+    "patternId": "runtime_dm-policy",
+    "title": "`runtime_dm-policy` - Open DM policy should have allowFrom restrictions",
     "description": "Open DM policy should have allowFrom restrictions"
   },
   {
     "parameters": [],
-    "patternId": "runtime/group-policy",
-    "title": "`runtime/group-policy` - Group policy should use allowlist",
+    "patternId": "runtime_group-policy",
+    "title": "`runtime_group-policy` - Group policy should use allowlist",
     "description": "Group policy should use allowlist"
   },
   {
     "parameters": [],
-    "patternId": "runtime/config-secrets",
-    "title": "`runtime/config-secrets` - Config should use env var references instead of plaintext secrets",
+    "patternId": "runtime_config-secrets",
+    "title": "`runtime_config-secrets` - Config should use env var references instead of plaintext secrets",
     "description": "Config should use env var references instead of plaintext secrets"
   },
   {
     "parameters": [],
-    "patternId": "security/no-secrets",
-    "title": "`security/no-secrets` - No API keys, tokens, or passwords should be in agent files",
+    "patternId": "security_no-secrets",
+    "title": "`security_no-secrets` - No API keys, tokens, or passwords should be in agent files",
     "description": "No API keys, tokens, or passwords should be in agent files"
   },
   {
     "parameters": [],
-    "patternId": "security/has-injection-defense",
-    "title": "`security/has-injection-defense` - Agent should have prompt injection defense instructions",
+    "patternId": "security_has-injection-defense",
+    "title": "`security_has-injection-defense` - Agent should have prompt injection defense instructions",
     "description": "Agent should have prompt injection defense instructions"
   },
   {
     "parameters": [],
-    "patternId": "security/has-permission-boundaries",
-    "title": "`security/has-permission-boundaries` - Agent should have clear permission boundaries",
+    "patternId": "security_has-permission-boundaries",
+    "title": "`security_has-permission-boundaries` - Agent should have clear permission boundaries",
     "description": "Agent should have clear permission boundaries"
   },
   {
     "parameters": [],
-    "patternId": "security/no-pii-exposure",
-    "title": "`security/no-pii-exposure` - Avoid exposing PII (email, phone, etc.) in shared agent files",
+    "patternId": "security_no-pii-exposure",
+    "title": "`security_no-pii-exposure` - Avoid exposing PII (email, phone, etc.) in shared agent files",
     "description": "Avoid exposing PII (email, phone, etc.) in shared agent files"
   },
   {
     "parameters": [],
-    "patternId": "security/env-var-references",
-    "title": "`security/env-var-references` - Prefer environment variable references over hardcoded values",
+    "patternId": "security_env-var-references",
+    "title": "`security_env-var-references` - Prefer environment variable references over hardcoded values",
     "description": "Prefer environment variable references over hardcoded values"
   },
   {
     "parameters": [],
-    "patternId": "security/prompt-injection-vulnerability",
-    "title": "`security/prompt-injection-vulnerability` - Detect patterns that make agents vulnerable to prompt injection",
+    "patternId": "security_prompt-injection-vulnerability",
+    "title": "`security_prompt-injection-vulnerability` - Detect patterns that make agents vulnerable to prompt injection",
     "description": "Detect patterns that make agents vulnerable to prompt injection"
   },
   {
     "parameters": [],
-    "patternId": "security/api-key-exposure",
-    "title": "`security/api-key-exposure` - Detect API key exposure patterns (sk-, Bearer, ghp_) with enhanced coverage",
+    "patternId": "security_no-injection-defense",
+    "title": "`security_no-injection-defense` - Workspace should have explicit injection defense measures",
+    "description": "Workspace should have explicit injection defense measures"
+  },
+  {
+    "parameters": [],
+    "patternId": "security_api-key-exposure",
+    "title": "`security_api-key-exposure` - Detect API key exposure patterns (sk-, Bearer, ghp_) with enhanced coverage",
     "description": "Detect API key exposure patterns (sk-, Bearer, ghp_) with enhanced coverage"
   },
   {
     "parameters": [],
-    "patternId": "skill-safety/skill-name-match-dir",
-    "title": "`skill-safety/skill-name-match-dir` - SKILL.md name frontmatter must match parent directory name",
+    "patternId": "skill-safety_skill-name-match-dir",
+    "title": "`skill-safety_skill-name-match-dir` - SKILL.md name frontmatter must match parent directory name",
     "description": "SKILL.md name frontmatter must match parent directory name"
   },
   {
     "parameters": [],
-    "patternId": "skill-safety/skill-description-when-to-use",
-    "title": "`skill-safety/skill-description-when-to-use` - SKILL.md description should explain when to use the skill",
+    "patternId": "skill-safety_skill-description-when-to-use",
+    "title": "`skill-safety_skill-description-when-to-use` - SKILL.md description should explain when to use the skill",
     "description": "SKILL.md description should explain when to use the skill"
   },
   {
     "parameters": [],
-    "patternId": "skill-safety/has-metadata",
-    "title": "`skill-safety/has-metadata` - Skills should have proper metadata (name, description, author)",
+    "patternId": "skill-safety_has-metadata",
+    "title": "`skill-safety_has-metadata` - Skills should have proper metadata (name, description, author)",
     "description": "Skills should have proper metadata (name, description, author)"
   },
   {
     "parameters": [],
-    "patternId": "skill-safety/dangerous-commands",
-    "title": "`skill-safety/dangerous-commands` - Skills should not contain dangerous shell commands",
+    "patternId": "skill-safety_dangerous-commands",
+    "title": "`skill-safety_dangerous-commands` - Skills should not contain dangerous shell commands",
     "description": "Skills should not contain dangerous shell commands"
   },
   {
     "parameters": [],
-    "patternId": "skill-safety/sensitive-paths",
-    "title": "`skill-safety/sensitive-paths` - Skills should not access sensitive system paths",
+    "patternId": "skill-safety_sensitive-paths",
+    "title": "`skill-safety_sensitive-paths` - Skills should not access sensitive system paths",
     "description": "Skills should not access sensitive system paths"
   },
   {
     "parameters": [],
-    "patternId": "skill-safety/data-exfiltration",
-    "title": "`skill-safety/data-exfiltration` - Skills should not exfiltrate data to external services",
+    "patternId": "skill-safety_data-exfiltration",
+    "title": "`skill-safety_data-exfiltration` - Skills should not exfiltrate data to external services",
     "description": "Skills should not exfiltrate data to external services"
   },
   {
     "parameters": [],
-    "patternId": "skill-safety/excessive-permissions",
-    "title": "`skill-safety/excessive-permissions` - Skills requesting broad permissions should be flagged",
+    "patternId": "skill-safety_excessive-permissions",
+    "title": "`skill-safety_excessive-permissions` - Skills requesting broad permissions should be flagged",
     "description": "Skills requesting broad permissions should be flagged"
   },
   {
     "parameters": [],
-    "patternId": "skill-safety/injection-vectors",
-    "title": "`skill-safety/injection-vectors` - Skills should not contain prompt injection vectors",
+    "patternId": "skill-safety_injection-vectors",
+    "title": "`skill-safety_injection-vectors` - Skills should not contain prompt injection vectors",
     "description": "Skills should not contain prompt injection vectors"
   },
   {
     "parameters": [],
-    "patternId": "claude-code/skills-vs-commands",
-    "title": "`claude-code/skills-vs-commands` - Detect deprecated .claude/commands/ usage — migrate to .claude/skills/",
+    "patternId": "claude-code_skills-vs-commands",
+    "title": "`claude-code_skills-vs-commands` - Detect deprecated .claude/commands/ usage — migrate to .claude/skills/",
     "description": "Detect deprecated .claude/commands/ usage — migrate to .claude/skills/"
   },
   {
     "parameters": [],
-    "patternId": "structure/has-main-file",
-    "title": "`structure/has-main-file` - Workspace must have a CLAUDE.md or AGENTS.md file",
+    "patternId": "claude-code_descriptive-ratio",
+    "title": "`claude-code_descriptive-ratio` - Analyzes descriptive vs imperative sentence ratio. Agent instruction files work best with imperative (command) style.",
+    "description": "Analyzes descriptive vs imperative sentence ratio. Agent instruction files work best with imperative (command) style."
+  },
+  {
+    "parameters": [],
+    "patternId": "structure_has-main-file",
+    "title": "`structure_has-main-file` - Workspace must have a CLAUDE.md or AGENTS.md file",
     "description": "Workspace must have a CLAUDE.md or AGENTS.md file"
   },
   {
     "parameters": [],
-    "patternId": "structure/has-sections",
-    "title": "`structure/has-sections` - Main file should have organized sections with headings",
+    "patternId": "structure_has-sections",
+    "title": "`structure_has-sections` - Main file should have organized sections with headings",
     "description": "Main file should have organized sections with headings"
   },
   {
     "parameters": [],
-    "patternId": "structure/heading-hierarchy",
-    "title": "`structure/heading-hierarchy` - Headings should follow a logical hierarchy (no skipping levels)",
+    "patternId": "structure_heading-hierarchy",
+    "title": "`structure_heading-hierarchy` - Headings should follow a logical hierarchy (no skipping levels)",
     "description": "Headings should follow a logical hierarchy (no skipping levels)"
   },
   {
     "parameters": [],
-    "patternId": "structure/file-size",
-    "title": "`structure/file-size` - Files should not be excessively long (readability)",
+    "patternId": "structure_file-size",
+    "title": "`structure_file-size` - Files should not be excessively long (readability)",
     "description": "Files should not be excessively long (readability)"
   },
   {
     "parameters": [],
-    "patternId": "structure/modular-files",
-    "title": "`structure/modular-files` - Using multiple focused files is better than one monolith",
+    "patternId": "structure_modular-files",
+    "title": "`structure_modular-files` - Using multiple focused files is better than one monolith",
     "description": "Using multiple focused files is better than one monolith"
   },
   {
     "parameters": [],
-    "patternId": "structure/no-empty-sections",
-    "title": "`structure/no-empty-sections` - Core agent files should not have empty sections",
+    "patternId": "structure_no-empty-sections",
+    "title": "`structure_no-empty-sections` - Core agent files should not have empty sections",
     "description": "Core agent files should not have empty sections"
   },
   {
     "parameters": [],
-    "patternId": "structure/has-file-map",
-    "title": "`structure/has-file-map` - A file map helps agents navigate the workspace",
+    "patternId": "structure_has-file-map",
+    "title": "`structure_has-file-map` - A file map helps agents navigate the workspace",
     "description": "A file map helps agents navigate the workspace"
   },
   {
     "parameters": [],
-    "patternId": "structure/has-version-or-update-date",
-    "title": "`structure/has-version-or-update-date` - Files should indicate when they were last updated",
+    "patternId": "structure_has-version-or-update-date",
+    "title": "`structure_has-version-or-update-date` - Files should indicate when they were last updated",
     "description": "Files should indicate when they were last updated"
   },
   {
     "parameters": [],
-    "patternId": "clarity/token-efficiency-score",
-    "title": "`clarity/token-efficiency-score` - Grades each agent file by line count to ensure token efficiency (A≤150, B≤300, C≤500, D>500)",
+    "patternId": "token-budget_total-tokens",
+    "title": "`token-budget_total-tokens` - Total token count should stay within recommended limits",
+    "description": "Total token count should stay within recommended limits"
+  },
+  {
+    "parameters": [],
+    "patternId": "token-budget_section-weight",
+    "title": "`token-budget_section-weight` - Identifies the heaviest sections consuming the most tokens",
+    "description": "Identifies the heaviest sections consuming the most tokens"
+  },
+  {
+    "parameters": [],
+    "patternId": "token-budget_compressible-padding",
+    "title": "`token-budget_compressible-padding` - Detects padding phrases that waste tokens without adding meaning",
+    "description": "Detects padding phrases that waste tokens without adding meaning"
+  },
+  {
+    "parameters": [],
+    "patternId": "token-budget_under-150-tokens",
+    "title": "`token-budget_under-150-tokens` - Files with fewer than 150 tokens may be too sparse to be useful",
+    "description": "Files with fewer than 150 tokens may be too sparse to be useful"
+  },
+  {
+    "parameters": [],
+    "patternId": "clarity_token-efficiency-score",
+    "title": "`clarity_token-efficiency-score` - Grades each agent file by line count to ensure token efficiency (A≤150, B≤300, C≤500, D>500)",
     "description": "Grades each agent file by line count to ensure token efficiency (A≤150, B≤300, C≤500, D>500)"
+  },
+  {
+    "parameters": [],
+    "patternId": "clarity_duplicate-content",
+    "title": "`clarity_duplicate-content` - Detects duplicate sections within and across files using 3-gram Jaccard similarity (≥ 0.6)",
+    "description": "Detects duplicate sections within and across files using 3-gram Jaccard similarity (≥ 0.6)"
+  },
+  {
+    "parameters": [],
+    "patternId": "clarity_obvious-statements",
+    "title": "`clarity_obvious-statements` - Detects unnecessary ",
+    "description": "Detects unnecessary "
+  },
+  {
+    "parameters": [],
+    "patternId": "clarity_token-budget-range",
+    "title": "`clarity_token-budget-range` - Estimates actual token count (English: 4 chars/token, Korean: 1.5 chars/token) and grades A≤2K, B≤5K, C≤10K, D>10K",
+    "description": "Estimates actual token count (English: 4 chars/token, Korean: 1.5 chars/token) and grades A≤2K, B≤5K, C≤10K, D>10K"
   }
 ]

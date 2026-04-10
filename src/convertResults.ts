@@ -24,10 +24,10 @@ export function convertResults (
     .filter(
       (d) => d.file === "(workspace)" || !files || files.includes(d.file)
     )
-    .filter((d) => !enabledPatterns || enabledPatterns.includes(d.rule))
+    .filter((d) => !enabledPatterns || enabledPatterns.includes(d.rule.replace(/\//g, "_")))
     .map((d) => {
       const lineNumber = d.line ?? 1
       const suggestion = d.fix ?? undefined
-      return new Issue(d.file, d.message, d.rule, lineNumber, suggestion)
+      return new Issue(d.file, d.message, d.rule.replace(/\//g, "_"), lineNumber, suggestion)
     })
 }

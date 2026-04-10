@@ -1,0 +1,4 @@
+/Users/heliorocha/dev/codacy/codacy-agentlinter/src/convertResults.ts
+/Users/heliorocha/dev/codacy/codacy-agentlinter/src/docGenerator.ts
+/Users/heliorocha/dev/codacy/codacy-agentlinter/src/test/convertResults.spec.ts
+/Users/heliorocha/dev/codacy/codacy-agentlinter/src/test/integration.spec.ts
